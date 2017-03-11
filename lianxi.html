@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="liu">
+        <title>练习</title>
+        <style>
+            html{
+                height: 100%;
+            }
+            body{
+                height: 100%;
+                margin: 0px;
+                background-color: black;
+                position: relative;
+            }
+            div{
+                width: 100px;
+                height: 100px;
+                /*text-align: center;*/
+                position: absolute;
+                left: calc(50% - 100px /2);
+                top: calc(50% - 100px /2);
+            }
+            .box{
+                text-align: center;
+
+                animation-name: rotate;
+
+                animation-direction: 2s;
+
+                
+            }
+            .box1{
+                background-color: greenyellow;
+            }
+            .box2{
+                background-color: yellow;
+            }
+            .box3{
+                background-color: orange;
+            }
+            @keyframes rotate{
+                from{
+                    transform: rotateX(120deg);
+                }
+                50%{
+                    transform: rotateX(240deg);
+                }
+                to{
+                    transform: rotateX(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="box1">上</div>
+            <div class="box2">中</div>
+            <div class="box3">下</div>
+        </div>
+    </body>
+</html>
